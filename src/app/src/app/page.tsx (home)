@@ -1,0 +1,31 @@
+import Hero from '@/components/Hero';
+import Container from '@/components/Container';
+
+/* Home page uses components and seeds a few sections as examples */
+export default function Home() {
+  return (
+    <>
+      <Hero />
+      <Container>
+        {/* Trusted by / Services preview / Featured portfolio stubs */}
+        <section className="py-20">
+          <h2 className="text-3xl font-semibold mb-6">Trusted by</h2>
+          <div className="flex gap-8 items-center text-subtext">
+            <div className="w-36 h-12 bg-white rounded-lg shadow-sm border border-border flex items-center justify-center">Logo</div>
+            <div className="w-36 h-12 bg-white rounded-lg shadow-sm border border-border flex items-center justify-center">Logo</div>
+            <div className="w-36 h-12 bg-white rounded-lg shadow-sm border border-border flex items-center justify-center">Logo</div>
+          </div>
+        </section>
+
+        <section className="py-20">
+          <h3 className="text-2xl font-semibold mb-6">Featured Work</h3>
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="bg-white border border-border rounded-lg p-6 shadow-premium">Project card</div>
+            <div className="bg-white border border-border rounded-lg p-6 shadow-premium">Project card</div>
+            <div className="bg-white border border-border rounded-lg p-6 shadow-premium">Project card</div>
+          </div>
+        </section>
+      </Container>
+    </>
+  );
+}
