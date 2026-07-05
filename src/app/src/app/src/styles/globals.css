@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Design token variables */
+:root{
+  --bg-primary: #F8F7F4;
+  --bg-secondary: #EFE8DD;
+  --accent: #C8A97E;
+  --text: #222222;
+  --subtext: #666666;
+  --card: #FFFFFF;
+  --border: #ECECEC;
+  --button: #000000;
+  --button-hover: #EFE6D8;
+  --radius-lg: 12px;
+}
+
+/* Apply default font family via CSS variable created by next/font */
+html { font-family: var(--font-plus), system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; }
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Utility tweaks for premium feel */
+.container-lg {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
